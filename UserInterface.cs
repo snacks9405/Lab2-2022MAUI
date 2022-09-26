@@ -18,14 +18,7 @@ namespace Lab2_2022
             Boolean done = false;
             while (!done)
             {
-                Console.WriteLine("\nMenu\n====");
-                Console.WriteLine("1. List Entries ");
-                Console.WriteLine("2. Add Entry");
-                Console.WriteLine("3. Delete Entry");
-                Console.WriteLine("4. Edit Entry");
-                Console.WriteLine("5. Quit");
-                Console.Write("Choice: ");
-                int choice = int.Parse(Console.ReadLine());
+                int choice = int.Parse(Placeholder.text);
 
                 switch (choice)
                 {

@@ -4,38 +4,50 @@
              x:Class="Lab2_2022Maui.MainPage">
 
     <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
 
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
+                <VerticalStackLayout BackgroundColor="Gray" Grid.Column="0" Grid.Row="0">
+                    <Label Text="one"/>
 
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
+                </VerticalStackLayout>
+                <VerticalStackLayout BackgroundColor="Red" Grid.Column="0" Grid.Row="1">
+                    <Label Text="two"/>
 
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+                </VerticalStackLayout>
 
-        </VerticalStackLayout>
+                <VerticalStackLayout BackgroundColor="Yellow" Grid.Column="0" Grid.Row="2">
+                    <Label Text="three"/>
+
+                </VerticalStackLayout>
+
+            </Grid>
+            <VerticalStackLayout BackgroundColor="Purple" Grid.Row="0" Grid.Column="1">
+                <Label Text="four"/>
+
+            </VerticalStackLayout>
+            <VerticalStackLayout BackgroundColor="Green" Grid.Row="1" Grid.Column = "0" Grid.ColumnSpan= "2">
+                <Label Text="five"/>
+
+            </VerticalStackLayout>
+        </Grid>
     </ScrollView>
 
 </ContentPage>

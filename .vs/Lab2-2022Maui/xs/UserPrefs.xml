@@ -1,22 +1,25 @@
 ﻿<Properties StartupConfiguration="{83B5FC15-FE5B-47C4-8956-67CBD533D3FD}|Default">
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MainPage.xaml.cs">
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_32" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MainPage.xaml">
     <Files>
-      <File FileName="Program.cs" Line="13" Column="1" />
-      <File FileName="MainPage.xaml" Line="1" Column="1" />
+      <File FileName="MainPage.xaml" Line="5" Column="1" IsPinned="True" />
       <File FileName="MainPage.xaml.cs" Line="8" Column="1" />
       <File FileName="Database.cs" Line="1" Column="1" />
       <File FileName="Entry.cs" Line="1" Column="1" />
+      <File FileName="IUserInterface.cs" Line="1" Column="1" />
+      <File FileName="UserInterface.cs" Line="2" Column="34" />
+      <File FileName="AppShell.xaml.cs" Line="1" Column="1" />
+      <File FileName="App.xaml.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Lab2-2022Maui" expanded="True">
             <Node name="Lab2-2022Maui" expanded="True">
-              <Node name="MainPage.xaml" expanded="True">
-                <Node name="MainPage.xaml.cs" selected="True" />
-              </Node>
+              <Node name="App.xaml" expanded="True" />
+              <Node name="AppShell.xaml" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -31,5 +34,5 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Lab2-2022Maui PreferredExecutionTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.Ide.ItemProperties.Lab2-2022Maui PreferredExecutionTarget="Android.pixel_5_-_api_32" />
 </Properties>
