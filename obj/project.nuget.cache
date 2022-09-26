@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1UHzCVp/6hPMz73VJ8hbBpbxgd2kMXCjqz8C6iYoA56VZXZF+lWVOgiHL2mdwK8Urjs626hx/NkD5thWN89MUA==",
+  "dgSpecHash": "CFO5JRo0jHfJ8NQ4tEXK4IdunFdh9a0QsuGZ7i7r9RK/9ClkL34YcMpu7bgybOrt/A9zF0CUdXIAa/dPlTB6Bw==",
   "success": true,
-  "projectFilePath": "/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui.csproj",
+  "projectFilePath": "/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/Lab2-2022Maui.csproj",
   "expectedPackageFiles": [
     "/Users/al/.nuget/packages/googlegson/2.9.0.1/googlegson.2.9.0.1.nupkg.sha512",
     "/Users/al/.nuget/packages/microsoft.extensions.configuration/6.0.1/microsoft.extensions.configuration.6.0.1.nupkg.sha512",

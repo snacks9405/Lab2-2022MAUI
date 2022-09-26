@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui.csproj": {}
+    "/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/Lab2-2022Maui.csproj": {}
   },
   "projects": {
-    "/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui.csproj": {
+    "/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/Lab2-2022Maui.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui.csproj",
+        "projectUniqueName": "/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/Lab2-2022Maui.csproj",
         "projectName": "Lab2-2022Maui",
-        "projectPath": "/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui.csproj",
+        "projectPath": "/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/Lab2-2022Maui.csproj",
         "packagesPath": "/Users/al/.nuget/packages/",
-        "outputPath": "/Users/al/Desktop/SE.1/Lab2-2022Maui/obj/",
+        "outputPath": "/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
