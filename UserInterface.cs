@@ -18,7 +18,7 @@ namespace Lab2_2022
             Boolean done = false;
             while (!done)
             {
-                int choice = int.Parse(Placeholder.text);
+                int choice = int.Parse("1");
 
                 switch (choice)
                 {
@@ -59,14 +59,14 @@ namespace Lab2_2022
 
             Console.WriteLine("\nAdding Entry\n==============");
             Console.Write("Clue: ");
-            clue = Console.ReadLine();
+            clue = "clue";
             Console.Write("Answer: ");
-            answer = Console.ReadLine();
+            answer = "answer";
 
             difficulty = GetValidDifficulty();
 
             Console.Write("Date (mm/dd/yyyy): ");
-            date = Console.ReadLine();
+            date = "data";
 
             InvalidFieldError result = bl.AddEntry(clue, answer, difficulty, date);
             if (result != InvalidFieldError.NoError)
@@ -83,7 +83,7 @@ namespace Lab2_2022
             do
             {
                 Console.Write("Id to {0}: ", purpose);
-                idValid = int.TryParse(Console.ReadLine(), out id);
+                idValid = int.TryParse("1", out id);
                 if (!idValid)
                 {
                     Console.WriteLine("Id must be an integer. Try again.");
@@ -100,7 +100,7 @@ namespace Lab2_2022
             do
             {
                 Console.Write("Difficulty: ");
-                difficultyValid = int.TryParse(Console.ReadLine(), out difficulty);
+                difficultyValid = int.TryParse("1", out difficulty);
                 if (!difficultyValid)
                 {
                     Console.WriteLine("Difficulty must be an integer. Try again. ");
@@ -143,14 +143,14 @@ namespace Lab2_2022
 
             Console.WriteLine("\nEditing Entry\n==============");
             Console.Write("Clue: ");
-            clue = Console.ReadLine();
+            clue = "clue";
             Console.Write("Answer: ");
-            answer = Console.ReadLine();
+            answer = "answer";
 
             difficulty = GetValidDifficulty();
 
             Console.Write("Date (mm/dd/yyyy): ");
-            date = Console.ReadLine();
+            date = "date";
 
             EntryEditError result = bl.EditEntry(clue, answer, difficulty, date, id);
             if (result != EntryEditError.NoError)

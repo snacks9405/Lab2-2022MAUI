@@ -3,7 +3,7 @@ AreAnyAssembliesTrimmed=false
 				AOTCompiler=/usr/local/share/dotnet/packs/Microsoft.NETCore.App.Runtime.AOT.osx-x64.Cross.iossimulator-x64/6.0.9/Sdk/../tools/mono-aot-cross
 				AOTOutputDirectory=obj/Debug/net6.0-ios/iossimulator-x64/nativelibraries/aot-output/
 				AppBundleManifestPath=bin/Debug/net6.0-ios/iossimulator-x64/Lab2-2022Maui.app/Info.plist
-				CacheDirectory=/Users/al/Desktop/SE.1/Lab2-2022Maui/obj/Debug/net6.0-ios/iossimulator-x64/linker-cache
+				CacheDirectory=/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-ios/iossimulator-x64/linker-cache
 				
 				Debug=true
 				DeploymentTarget=14.2
@@ -179,7 +179,7 @@ FrameworkAssembly=System.Private.CoreLib
 				Interpreter=all
 				IntermediateLinkDir=obj/Debug/net6.0-ios/iossimulator-x64/linked/
 				InvariantGlobalization=false
-				ItemsDirectory=/Users/al/Desktop/SE.1/Lab2-2022Maui/obj/Debug/net6.0-ios/iossimulator-x64/linker-items
+				ItemsDirectory=/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-ios/iossimulator-x64/linker-items
 				IsAppExtension=false
 				IsSimulatorBuild=True
 				LibMonoLinkMode=dylib

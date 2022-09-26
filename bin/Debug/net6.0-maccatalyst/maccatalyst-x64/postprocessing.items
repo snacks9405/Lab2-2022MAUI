@@ -9,7 +9,7 @@
       <dSYMInfoPlistRelativePath>Lab2-2022Maui.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
       <SymbolFile>obj/Debug/net6.0-maccatalyst/maccatalyst-x64/mtouch-symbols.list</SymbolFile>
       <DSymName>Lab2-2022Maui.app.dSYM</DSymName>
-      <SourceProjectPath>/Users/al/Desktop/SE.1/Lab2-2022Maui</SourceProjectPath>
+      <SourceProjectPath>/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui</SourceProjectPath>
     </_PostProcessingItem>
   </ItemGroup>
 </Project>
