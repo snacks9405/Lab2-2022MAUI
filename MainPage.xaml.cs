@@ -79,8 +79,4 @@ public partial class MainPage : ContentPage
     {
 		DisplayAlert("Oopsies", e.ToString(), "my bad");
     }
-
-    void EntriesList_Scrolled(System.Object sender, Microsoft.Maui.Controls.ScrolledEventArgs e)
-    {
-    }
 }

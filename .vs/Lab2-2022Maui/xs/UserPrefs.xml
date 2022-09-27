@@ -1,15 +1,14 @@
 ﻿<Properties StartupConfiguration="{83B5FC15-FE5B-47C4-8956-67CBD533D3FD}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.big_tablet" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.0.0.0" />
   <MonoDevelop.Ide.ItemProperties.Lab2-2022Maui PreferredExecutionTarget="Android.big_tablet" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workbench ActiveDocument="MainPage.xaml.cs">
     <Files>
-      <File FileName="MainPage.xaml" Line="53" Column="25" IsPinned="True" />
-      <File FileName="MainPage.xaml.cs" Line="33" Column="3" />
+      <File FileName="MainPage.xaml" Line="143" Column="35" IsPinned="True" />
+      <File FileName="MainPage.xaml.cs" Line="81" Column="6" />
       <File FileName="BusinessLogic.cs" Line="48" Column="1" />
       <File FileName="Database.cs" Line="67" Column="1" />
       <File FileName="Entry.cs" Line="12" Column="1" />
@@ -29,9 +28,7 @@
               </Node>
               <Node name="App.xaml" expanded="True" />
               <Node name="AppShell.xaml" expanded="True" />
-              <Node name="MainPage.xaml" expanded="True">
-                <Node name="MainPage.xaml.cs" selected="True" />
-              </Node>
+              <Node name="MainPage.xaml" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -41,6 +38,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.0.0.0" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.big_tablet" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
