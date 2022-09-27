@@ -1,8 +1,9 @@
 ﻿using System;
+using CommunityToolkit.Mvvm.ComponentModel;
 namespace Lab2_2022
 {
     [Serializable()]
-    public class Entry : IEquatable<Entry>
+    public class Entry : ObservableObject
     {
         public String Clue { get; set; }
         public String Answer { get; set; }

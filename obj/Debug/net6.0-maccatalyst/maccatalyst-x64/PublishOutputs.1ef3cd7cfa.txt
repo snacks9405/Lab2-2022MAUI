@@ -1,4 +1,5 @@
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../Lab2-2022Maui.app/Contents/MonoBundle/icudt.dat
+/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../Lab2-2022Maui.app/Contents/MonoBundle/CommunityToolkit.Mvvm.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../Lab2-2022Maui.app/Contents/MonoBundle/Microsoft.Extensions.Configuration.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../Lab2-2022Maui.app/Contents/MonoBundle/Microsoft.Extensions.Configuration.Abstractions.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../Lab2-2022Maui.app/Contents/MonoBundle/Microsoft.Extensions.DependencyInjection.dll

@@ -32,7 +32,7 @@ namespace Lab2_2022
     {
         const int MAX_CLUE_LENGTH = 250;
         const int MAX_ANSWER_LENGTH = 21;
-        const int MAX_DIFFICULTY = 5;
+        const int MAX_DIFFICULTY = 3;
 
         IDatabase db;
 
@@ -54,17 +54,21 @@ namespace Lab2_2022
 
         private InvalidFieldError CheckEntryFields(string clue, string answer, int difficulty, string date)
         {
-            if (clue.Length < 1 || clue.Length > MAX_CLUE_LENGTH)
+            if (clue == null || clue.Length < 1 || clue.Length > MAX_CLUE_LENGTH)
             {
                 return InvalidFieldError.InvalidClueLength;
             }
-            if (answer.Length < 1 || answer.Length > MAX_ANSWER_LENGTH)
+            if (answer == null || answer.Length < 1 || answer.Length > MAX_ANSWER_LENGTH)
             {
                 return InvalidFieldError.InvalidAnswerLength;
             }
             if (difficulty < 1 || difficulty > MAX_DIFFICULTY)
             {
                 return InvalidFieldError.InvalidDifficulty;
+            }
+            if (date == null)
+            {
+                return InvalidFieldError.InvalidDate;
             }
 
             return InvalidFieldError.NoError;

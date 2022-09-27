@@ -1,12 +1,11 @@
 ﻿<Properties StartupConfiguration="{83B5FC15-FE5B-47C4-8956-67CBD533D3FD}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="MainPage.xaml.cs">
     <Files>
-      <File FileName="MainPage.xaml" Line="100" Column="42" IsPinned="True" />
-      <File FileName="MainPage.xaml.cs" Line="50" Column="1" />
-      <File FileName="BusinessLogic.cs" Line="131" Column="1" />
+      <File FileName="MainPage.xaml" Line="100" Column="37" IsPinned="True" />
+      <File FileName="MainPage.xaml.cs" Line="29" Column="10" />
+      <File FileName="BusinessLogic.cs" Line="48" Column="1" />
       <File FileName="Database.cs" Line="67" Column="1" />
-      <File FileName="Entry.cs" Line="5" Column="26" />
-      <File FileName="Platforms/iOS/Program.cs" Line="9" Column="14" />
+      <File FileName="Entry.cs" Line="12" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

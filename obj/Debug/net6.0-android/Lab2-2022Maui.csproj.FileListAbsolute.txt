@@ -2858,6 +2858,8 @@ C:/Users/rodri_egxtw4o/OneDrive/UWO/Semester 5/CS 341/Lab2-2022Maui/obj/Debug/ne
 C:/Users/rodri_egxtw4o/OneDrive/UWO/Semester 5/CS 341/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Private.CoreLib.dll
 C:/Users/rodri_egxtw4o/OneDrive/UWO/Semester 5/CS 341/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Private.Uri.dll
 C:/Users/rodri_egxtw4o/OneDrive/UWO/Semester 5/CS 341/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Xml.dll
+/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/CommunityToolkit.Mvvm.dll
+/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/CommunityToolkit.Mvvm.pdb
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/mscorlib.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Collections.Concurrent.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Data.dll
@@ -2866,10 +2868,3 @@ C:/Users/rodri_egxtw4o/OneDrive/UWO/Semester 5/CS 341/Lab2-2022Maui/obj/Debug/ne
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Private.CoreLib.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Private.Uri.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Xml.dll
-/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/src/crc645d80431ce5f73f11/EdgeSnapHelper 2.java
-/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/src/crc645d80431ce5f73f11/TemplatedItemViewHolder 2.java
-/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/src/crc645d80431ce5f73f11/TextViewHolder 2.java
-/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/src/crc6477f0d89a9cfd64b1/TextViewHolder 2.java
-/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/src/mono/com/bumptech/glide/manager/ConnectivityMonitor_ConnectivityListenerImplementor 2.java
-/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/src/mono/com/bumptech/glide/manager/LifecycleListenerImplementor 2.java
-/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/src/mono/com/bumptech/glide/request/RequestListenerImplementor 2.java

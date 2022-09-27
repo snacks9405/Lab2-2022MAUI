@@ -21,13 +21,12 @@ public partial class MainPage : ContentPage
 		String date = Date.Text;
 		String difficulty = Difficulty.Text;
 		int intDifficulty;
-
-		if (CheckDifficulty(difficulty)) { int.TryParse(difficulty, out intDifficulty); }
-		else { DisplayAlert("Oopsies", "Difficulty must be an integer", "my bad"); return; }
-		InvalidFieldError result = bl.AddEntry(clue, answer, intDifficulty, date);
+		
+		if (!int.TryParse(difficulty, out intDifficulty)) { DisplayAlert("Oopsies", "Difficulty must be an integer", "my bad"); return; }
+        InvalidFieldError result = bl.AddEntry(clue, answer, intDifficulty, date);
 		if (result != InvalidFieldError.NoError){ InvalidFieldReporter(result); }
 
-        EntriesList.ItemsSource = bl.GetEntries();
+       // EntriesList.ItemsSource = bl.GetEntries();
     }
 
 	bool CheckDifficulty(String difficulty)
@@ -38,11 +37,15 @@ public partial class MainPage : ContentPage
 
 	void OnDeleteClicked(Object sender, EventArgs e)
 	{
+		
 		Entry entry = (Entry)EntriesList.SelectedItem;
+        if (entry == null){return;}
         EntryDeletionError result = bl.DeleteEntry(entry.Id);
 
 		if (result != EntryDeletionError.NoError) { EntryDeletionReporter(result); }
         EntriesList.ItemsSource = bl.GetEntries();
+
+	
     }
 
 	void OnEditClicked(Object sender, EventArgs e)
@@ -52,10 +55,11 @@ public partial class MainPage : ContentPage
         String date = Date.Text;
         String difficulty = Difficulty.Text;
 		int intDifficulty;
-		if (CheckDifficulty(difficulty)) { int.TryParse(difficulty, out intDifficulty); }
-		else { DisplayAlert("Oopsies", "Difficulty must be an integer", "my bad"); return; }
+
+        if (!int.TryParse(difficulty, out intDifficulty)) { DisplayAlert("Oopsies", "Difficulty must be an integer", "my bad"); return; }
         Entry entry = (Entry)EntriesList.SelectedItem;
-		EntryEditError result = bl.EditEntry(clue, answer, intDifficulty, date, entry.Id);
+        if (entry == null) {return;}
+        EntryEditError result = bl.EditEntry(clue, answer, intDifficulty, date, entry.Id);
 		if (result != EntryEditError.NoError) { EntryEditReporter(result); }
 		EntriesList.ItemsSource = bl.GetEntries();
     }
@@ -75,4 +79,5 @@ public partial class MainPage : ContentPage
     {
 		DisplayAlert("Oopsies", e.ToString(), "my bad");
     }
+	
 }

@@ -27,7 +27,6 @@
                 <Button x:Name="AddEntryBtn"
                             Text="Add Entry"  
                             Grid.Row="0"
-                            
                             Clicked="OnAddEntryClicked"
                             TextColor="Black"/>
 
@@ -37,8 +36,6 @@
                             Clicked="OnDeleteClicked"
                             Grid.Row="1"
                             TextColor="Black"/>
-                            <!--IsEnabled="{Binding Path=IsSelected, RelativeSource={}}"-->
-
                             
 
                 <Button x:Name ="EditEntryBtn"
@@ -99,7 +96,9 @@
                            Keyboard="Numeric"/>
                     <Entry x:Name="Date" 
                            Placeholder="Date goes here" 
-                           WidthRequest="100"/>
+                           WidthRequest="100"
+                           MaxLength="9"
+                           Keyboard="Numeric"/>
                 </HorizontalStackLayout>
 
             </VerticalStackLayout>

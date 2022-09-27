@@ -47,18 +47,25 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>MonoBundle/CommunityToolkit.Mvvm.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ekk1Ai4t2xZ1GMf9KJS/uHKy/lXbCXhl6mzgbZT0juc=
+			</data>
+		</dict>
 		<key>MonoBundle/Lab2-2022Maui.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SQpgb0M7LbrBhraPAVaXbUrUfAZyVn71ibSmZHSMGfY=
+			KZX3EZmeAYD84bH1a6N7KTJggChMb5T911oDT3pAU6E=
 			</data>
 		</dict>
 		<key>MonoBundle/Lab2-2022Maui.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			F60sIEnYWekk3nHLjBiXPYS10K8Jwk9bkylqUOQBE+w=
+			ZWpX4HClW8rAeNgf+pRm0uS3bBdwpvHumSu6oSpNMqM=
 			</data>
 		</dict>
 		<key>MonoBundle/Microsoft.CSharp.dll</key>

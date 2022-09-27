@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "CFO5JRo0jHfJ8NQ4tEXK4IdunFdh9a0QsuGZ7i7r9RK/9ClkL34YcMpu7bgybOrt/A9zF0CUdXIAa/dPlTB6Bw==",
+  "dgSpecHash": "wcUuRdFcDJu8EQrgcaNI6JExQ0pmJRoyXqRhMpu4hW8tSEUEGRgWFm3P2dVDVHvcQz9cpOlmFojeaUpKRCtYRA==",
   "success": true,
   "projectFilePath": "/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/Lab2-2022Maui.csproj",
   "expectedPackageFiles": [
+    "/Users/al/.nuget/packages/communitytoolkit.mvvm/8.0.0/communitytoolkit.mvvm.8.0.0.nupkg.sha512",
     "/Users/al/.nuget/packages/googlegson/2.9.0.1/googlegson.2.9.0.1.nupkg.sha512",
     "/Users/al/.nuget/packages/microsoft.extensions.configuration/6.0.1/microsoft.extensions.configuration.6.0.1.nupkg.sha512",
     "/Users/al/.nuget/packages/microsoft.extensions.configuration.abstractions/6.0.0/microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
