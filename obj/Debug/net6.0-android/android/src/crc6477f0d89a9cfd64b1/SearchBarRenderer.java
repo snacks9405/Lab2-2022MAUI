@@ -5,14 +5,14 @@ public class SearchBarRenderer
 	extends crc6477f0d89a9cfd64b1.ViewRenderer_2
 	implements
 		mono.android.IGCUserPeer,
-		android.widget.SearchView.OnQueryTextListener
+		androidx.appcompat.widget.SearchView.OnQueryTextListener
 {
 /** @hide */
 	public static final String __md_methods;
 	static {
 		__md_methods = 
-			"n_onQueryTextChange:(Ljava/lang/String;)Z:GetOnQueryTextChange_Ljava_lang_String_Handler:Android.Widget.SearchView/IOnQueryTextListenerInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\n" +
-			"n_onQueryTextSubmit:(Ljava/lang/String;)Z:GetOnQueryTextSubmit_Ljava_lang_String_Handler:Android.Widget.SearchView/IOnQueryTextListenerInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\n" +
+			"n_onQueryTextChange:(Ljava/lang/String;)Z:GetOnQueryTextChange_Ljava_lang_String_Handler:AndroidX.AppCompat.Widget.SearchView/IOnQueryTextListenerInvoker, Xamarin.AndroidX.AppCompat\n" +
+			"n_onQueryTextSubmit:(Ljava/lang/String;)Z:GetOnQueryTextSubmit_Ljava_lang_String_Handler:AndroidX.AppCompat.Widget.SearchView/IOnQueryTextListenerInvoker, Xamarin.AndroidX.AppCompat\n" +
 			"";
 		mono.android.Runtime.register ("Microsoft.Maui.Controls.Compatibility.Platform.Android.SearchBarRenderer, Microsoft.Maui.Controls.Compatibility", SearchBarRenderer.class, __md_methods);
 	}

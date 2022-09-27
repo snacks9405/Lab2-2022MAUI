@@ -34,7 +34,7 @@
 
                 <Button x:Name=" DeleteEntryBtn"
                             Text="Delete Entry" 
-                            Clicked="OnDeleteTaskClicked"
+                            Clicked="OnDeleteClicked"
                             Grid.Row="1"
                             TextColor="Black"/>
                             <!--IsEnabled="{Binding Path=IsSelected, RelativeSource={}}"-->
@@ -44,7 +44,7 @@
                 <Button x:Name ="EditEntryBtn"
                             Text="Edit Entry"
                             Grid.Row="2"
-                            
+                            Clicked="OnEditClicked"
                             TextColor="Black"/>
 
 
@@ -82,18 +82,21 @@
                     <Entry x:Name="Clue" 
                            Placeholder="clue goes here" 
                            WidthRequest="400"
-                           BackgroundColor="Gray"/>
+                           BackgroundColor="Gray"
+                           MaxLength="200"/>
                 </HorizontalStackLayout>
                 <HorizontalStackLayout>
                     <Entry x:Name="Answer" 
                            Placeholder="Answer goes here" 
                            WidthRequest="400"
-                           BackgroundColor="Gray"/>
+                           BackgroundColor="Gray"
+                           MaxLength="25"/>
                 </HorizontalStackLayout>
                 <HorizontalStackLayout>
                     <Entry x:Name="Difficulty" 
                            Placeholder="#" 
-                           WidthRequest="100"/>
+                           WidthRequest="100"
+                           Keyboard="Numeric"/>
                     <Entry x:Name="Date" 
                            Placeholder="Date goes here" 
                            WidthRequest="100"/>

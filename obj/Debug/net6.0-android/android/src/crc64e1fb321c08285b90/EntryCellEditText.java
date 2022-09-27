@@ -2,7 +2,7 @@ package crc64e1fb321c08285b90;
 
 
 public class EntryCellEditText
-	extends android.widget.EditText
+	extends androidx.appcompat.widget.AppCompatEditText
 	implements
 		mono.android.IGCUserPeer
 {
@@ -38,14 +38,6 @@ public class EntryCellEditText
 		super (p0, p1, p2);
 		if (getClass () == EntryCellEditText.class)
 			mono.android.TypeManager.Activate ("Microsoft.Maui.Controls.Handlers.Compatibility.EntryCellEditText, Microsoft.Maui.Controls", "Android.Content.Context, Mono.Android:Android.Util.IAttributeSet, Mono.Android:System.Int32, System.Private.CoreLib", this, new java.lang.Object[] { p0, p1, p2 });
-	}
-
-
-	public EntryCellEditText (android.content.Context p0, android.util.AttributeSet p1, int p2, int p3)
-	{
-		super (p0, p1, p2, p3);
-		if (getClass () == EntryCellEditText.class)
-			mono.android.TypeManager.Activate ("Microsoft.Maui.Controls.Handlers.Compatibility.EntryCellEditText, Microsoft.Maui.Controls", "Android.Content.Context, Mono.Android:Android.Util.IAttributeSet, Mono.Android:System.Int32, System.Private.CoreLib:System.Int32, System.Private.CoreLib", this, new java.lang.Object[] { p0, p1, p2, p3 });
 	}
 
 

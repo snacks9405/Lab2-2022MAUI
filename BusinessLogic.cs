@@ -77,6 +77,7 @@ namespace Lab2_2022
             var result = CheckEntryFields(clue, answer, difficulty, date);
             if (result != InvalidFieldError.NoError)
             {
+
                 return result;
             }
             Entry entry = new Entry(clue, answer, difficulty, date, db.GetNextAvailableID());
