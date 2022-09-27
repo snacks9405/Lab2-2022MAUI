@@ -478,7 +478,6 @@ C:\Users\rodri_egxtw4o\OneDrive\UWO\Semester 5\CS 341\Lab2-2022Maui\bin\Debug\ne
 C:\Users\rodri_egxtw4o\OneDrive\UWO\Semester 5\CS 341\Lab2-2022Maui\bin\Debug\net6.0-ios\iossimulator-x64\libxamarin-dotnet-debug.dylib
 C:\Users\rodri_egxtw4o\OneDrive\UWO\Semester 5\CS 341\Lab2-2022Maui\bin\Debug\net6.0-ios\iossimulator-x64\libxamarin-dotnet.a
 C:\Users\rodri_egxtw4o\OneDrive\UWO\Semester 5\CS 341\Lab2-2022Maui\bin\Debug\net6.0-ios\iossimulator-x64\libxamarin-dotnet.dylib
-C:\Users\rodri_egxtw4o\OneDrive\UWO\Semester 5\CS 341\Lab2-2022Maui\obj\Debug\net6.0-ios\iossimulator-x64\build-signature\signature
 C:\Users\rodri_egxtw4o\OneDrive\UWO\Semester 5\CS 341\Lab2-2022Maui\obj\Debug\net6.0-ios\iossimulator-x64\mauiimage.inputs
 C:\Users\rodri_egxtw4o\OneDrive\UWO\Semester 5\CS 341\Lab2-2022Maui\obj\Debug\net6.0-ios\iossimulator-x64\mauifont.inputs
 C:\Users\rodri_egxtw4o\OneDrive\UWO\Semester 5\CS 341\Lab2-2022Maui\obj\Debug\net6.0-ios\iossimulator-x64\mauisplash.inputs

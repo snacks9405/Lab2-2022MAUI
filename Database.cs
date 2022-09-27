@@ -14,7 +14,7 @@ namespace Lab2_2022
 {
     public class Database : IDatabase
     {
-        readonly String filename = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "temp.txt");
+        readonly String filename = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "clues.txt");
 
 
         SortedDictionary<int, Entry> entries;
@@ -32,7 +32,6 @@ namespace Lab2_2022
         {
             try
             {
-                entry.Id = GetNextAvailableID();
                 entries.Add(entry.Id, entry);
 
                 string jsonString = JsonSerializer.Serialize(entries, options);
@@ -124,13 +123,14 @@ namespace Lab2_2022
         /// 
         /// </summary>
         /// <returns></returns>
-        public SortedDictionary<int, Entry> GetEntries()
+        public ObservableCollection<Entry> GetEntries()
         {
+            observableEntries = new ObservableCollection<Entry>();
             if (!File.Exists(filename))
             {
                 File.CreateText(filename);
                 entries = new SortedDictionary<int, Entry>();
-                return entries;
+                return observableEntries;
             }
 
             string jsonString = File.ReadAllText(filename);
@@ -145,7 +145,7 @@ namespace Lab2_2022
             }
             else { entries = new SortedDictionary<int, Entry>(); }
 
-            return entries;
+            return observableEntries;
         }
 
     }

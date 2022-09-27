@@ -22,7 +22,7 @@ namespace Lab2_2022
 
                 switch (choice)
                 {
-                    case 1: ListEntries(); break;
+                    case 1: break;
                     case 2: AddEntry(); break;
                     case 3: DeleteEntry(); break;
                     case 4: EditEntry(); break;
@@ -34,21 +34,7 @@ namespace Lab2_2022
             System.Environment.Exit(0);
         }
 
-        private void ListEntries()
-        {
-            Console.WriteLine("\nEntries\n=======");
 
-            SortedDictionary<int, Entry> entries = bl.GetEntries();
-            if (entries == null)
-            {
-                return;
-            }
-            foreach (Entry entry in entries.Values)
-            {
-                Console.WriteLine("{0}. {1}, {2}, {3}", entry.Id, entry.Clue, entry.Answer, entry.Difficulty);
-            };
-
-        }
 
         private void AddEntry()
         {

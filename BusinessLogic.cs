@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 
 namespace Lab2_2022
 {
@@ -41,7 +42,7 @@ namespace Lab2_2022
         }
 
 
-        public SortedDictionary<int, Entry> GetEntries()
+        public ObservableCollection<Entry> GetEntries()
         {
             return db.GetEntries();
         }

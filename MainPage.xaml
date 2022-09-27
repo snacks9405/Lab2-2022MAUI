@@ -27,7 +27,7 @@
                 <Button x:Name="AddEntryBtn"
                             Text="Add Entry"  
                             Grid.Row="0"
-                            BackgroundColor="White"
+                            
                             Clicked="OnAddEntryClicked"
                             TextColor="Black"/>
 
@@ -35,19 +35,28 @@
                 <Button x:Name=" DeleteEntryBtn"
                             Text="Delete Entry" 
                             Grid.Row="1"
-                            BackgroundColor="White"
-                            TextColor="Black"/>
+                            
 
+                            TextColor="Black">
+                    <!--<Button.Style>
+                        <Style>
+                            <Style.Triggers>
+                                <DataTrigger Binding ="{Binding ElementName=EntriesList, Path=SelectedIndex}" Value="-1">
+                                    <Setter Property="Button.IsEnabled" Value="false"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>-->
+                </Button>
                 <Button x:Name ="EditEntryBtn"
                             Text="Edit Entry"
                             Grid.Row="2"
-                            BackgroundColor="White"
+                            
                             TextColor="Black"/>
 
 
             </Grid>
-            <VerticalStackLayout BackgroundColor="Purple" Grid.Row="0" Grid.Column="1">
-
+            <VerticalStackLayout BackgroundColor="White" Grid.Row="0" Grid.Column="1">
             </VerticalStackLayout>
             <VerticalStackLayout BackgroundColor="Green" Grid.Row="1" Grid.Column = "0" Grid.ColumnSpan= "2">
 
@@ -55,20 +64,21 @@
                     <Entry x:Name="Clue" 
                            Placeholder="clue goes here" 
                            WidthRequest="400"
-                           BackgroundColor="White"></Entry>
+                           BackgroundColor="Gray"/>
                 </HorizontalStackLayout>
                 <HorizontalStackLayout>
                     <Entry x:Name="Answer" 
                            Placeholder="Answer goes here" 
-                           WidthRequest="400"></Entry>
+                           WidthRequest="400"
+                           BackgroundColor="Gray"/>
                 </HorizontalStackLayout>
                 <HorizontalStackLayout>
                     <Entry x:Name="Difficulty" 
                            Placeholder="#" 
-                           WidthRequest="100"></Entry>
+                           WidthRequest="100"/>
                     <Entry x:Name="Date" 
-                           Placeholder=" " 
-                           WidthRequest="100"></Entry>
+                           Placeholder="Date goes here" 
+                           WidthRequest="100"/>
                 </HorizontalStackLayout>
 
             </VerticalStackLayout>

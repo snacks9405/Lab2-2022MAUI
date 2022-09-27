@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
 
 namespace Lab2_2022
 {
@@ -7,7 +8,7 @@ namespace Lab2_2022
         void AddEntry(Entry entry);
         bool DeleteEntry(Entry entry);
         Entry FindEntry(int id);
-        SortedDictionary<int, Entry> GetEntries();
+        ObservableCollection<Entry> GetEntries();
         int GetNextAvailableID();
         bool ReplaceEntry(Entry replacementEntry);
     }
