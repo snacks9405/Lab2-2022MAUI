@@ -5,11 +5,12 @@ using System.Threading.Tasks;
 public partial class MainPage : ContentPage
 {
 	IBusinessLogic bl = new BusinessLogic();
+
     public MainPage()
 	{
 		
 		InitializeComponent();
-        //EntriesList.ItemsSource = bl.GetEntries();
+        EntriesList.ItemsSource = bl.GetEntries();
     }
 
 	void OnAddEntryClicked(Object sender, EventArgs e)
@@ -24,7 +25,9 @@ public partial class MainPage : ContentPage
 		if (CheckDifficulty(difficulty)) { int.TryParse(difficulty, out intDifficulty); }
 		else { DisplayAlert("Oopsies", "Difficulty must be an integer", "OK"); return; }
 		InvalidFieldError result = bl.AddEntry(clue, answer, intDifficulty, date);
-	}
+
+        EntriesList.ItemsSource = bl.GetEntries();
+    }
 
 	bool CheckDifficulty(String difficulty)
 	{
@@ -32,21 +35,11 @@ public partial class MainPage : ContentPage
 		return (int.TryParse(difficulty, out diff));
 	}
 
- //   async Task OnDeleteEntryClicked(Object sender, EventArgs e)
- //   {
-	//	String numEntry = GetEntryID();
-	//	if (!int.TryParse(numEntry, out intNumEntry)) { await DisplayAlert("Invalid Entry ID", "Entry {0} does not exist.", numEntry);}
+	void OnDeleteTaskClicked(Object sender, EventArgs e)
+	{
+		Entry entry = (Entry)EntriesList.SelectedItem;
+        bl.DeleteEntry(entry.Id);
 
- //       EntryDeletionError result = bl.DeleteEntry(intNumEntry);
- //       if (result != EntryDeletionError.NoError)
- //       {
- //           Console.WriteLine("Error while deleting entry: {0}", result);
- //       }
- //   }
-	
-	//async Task GetEntryID()
-	//{
- //       String numEntry = await DisplayPromptAsync("Delete Entry", "Enter entry ID to delete: ");
-	//	return numEntry;
- //   }
+        EntriesList.ItemsSource = bl.GetEntries();
+    }
 }

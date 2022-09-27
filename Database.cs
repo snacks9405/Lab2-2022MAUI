@@ -5,6 +5,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.Text.Json;
 using System.Collections.ObjectModel;
 using Lab2_2022Maui;
+using Org.Json;
 
 // https://www.dotnetperls.com/serialize-list
 // https://www.daveoncsharp.com/2009/07/xml-serialization-of-collections/
@@ -30,17 +31,8 @@ namespace Lab2_2022
 
         public void AddEntry(Entry entry)
         {
-            try
-            {
-                entries.Add(entry.Id, entry);
-
-                string jsonString = JsonSerializer.Serialize(entries, options);
-                File.WriteAllText(filename, jsonString);
-            }
-            catch (IOException ioe)
-            {
-                Console.WriteLine("Error while adding entry: {0}", ioe);
-            }
+            entries.Add(entry.Id, entry);
+            CommitChanges();
         }
 
         /// <summary>
@@ -82,18 +74,10 @@ namespace Lab2_2022
         /// <param name="entry">An entry, which is presumed to exist</param>
         public bool DeleteEntry(Entry entry)
         {
-            try
-            {
-                var result = entries.Remove(entry.Id);
-                string jsonString = JsonSerializer.Serialize(entries, options);
-                File.WriteAllText(filename, jsonString);
-                return true;
-            }
-            catch (IOException ioe)
-            {
-                Console.WriteLine("Error while deleting entry: {0}", ioe);
-            }
-            return false;
+
+            var result = entries.Remove(entry.Id);
+            return CommitChanges();
+
         }
 
         public bool ReplaceEntry(Entry replacementEntry)
@@ -105,18 +89,7 @@ namespace Lab2_2022
             entry.Difficulty = replacementEntry.Difficulty;
             entry.Date = replacementEntry.Date;         // change it then write it out
 
-            try
-            {
-                string jsonString = JsonSerializer.Serialize(entries, options);
-                File.WriteAllText(filename, jsonString);
-                return true;
-            }
-            catch (IOException ioe)
-            {
-                Console.WriteLine("Error while replacing entry: {0}", ioe);
-            }
-
-            return false;
+            return CommitChanges();
         }
 
         /// <summary>
@@ -133,6 +106,7 @@ namespace Lab2_2022
                 return observableEntries;
             }
 
+
             string jsonString = File.ReadAllText(filename);
             if (jsonString.Length > 0)
             {
@@ -146,6 +120,26 @@ namespace Lab2_2022
             else { entries = new SortedDictionary<int, Entry>(); }
 
             return observableEntries;
+        }
+
+        private bool CommitChanges()
+        {
+            try
+            {
+                string jsonString = JsonSerializer.Serialize(entries, options);
+                File.WriteAllText(filename, jsonString);
+                observableEntries = new ObservableCollection<Entry>();
+                foreach (KeyValuePair<int, Entry> pair in entries)
+                {
+                    observableEntries.Add(pair.Value);
+                }
+                return true;
+            }
+            catch (IOException ioe)
+            {
+                Console.WriteLine("Error while replacing entry: {0}", ioe);
+            }
+            return false;
         }
 
     }

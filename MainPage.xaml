@@ -34,20 +34,13 @@
 
                 <Button x:Name=" DeleteEntryBtn"
                             Text="Delete Entry" 
+                            Clicked="OnDeleteTaskClicked"
                             Grid.Row="1"
+                            TextColor="Black"/>
+                            <!--IsEnabled="{Binding Path=IsSelected, RelativeSource={}}"-->
+
                             
 
-                            TextColor="Black">
-                    <!--<Button.Style>
-                        <Style>
-                            <Style.Triggers>
-                                <DataTrigger Binding ="{Binding ElementName=EntriesList, Path=SelectedIndex}" Value="-1">
-                                    <Setter Property="Button.IsEnabled" Value="false"/>
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Button.Style>-->
-                </Button>
                 <Button x:Name ="EditEntryBtn"
                             Text="Edit Entry"
                             Grid.Row="2"
@@ -57,6 +50,31 @@
 
             </Grid>
             <VerticalStackLayout BackgroundColor="White" Grid.Row="0" Grid.Column="1">
+                <ListView x:Name="EntriesList">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid RowSpacing="150" ColumnSpacing="10" Padding="10">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Row="0" Grid.Column="0" Text="{Binding Id}"/>
+                                    <Label Grid.Row="0" Grid.Column="1" Text="{Binding Clue}"/>
+                                    <Label Grid.Row="0" Grid.Column="2" Text="{Binding Answer}"/>
+                                    <Label Grid.Row="0" Grid.Column="3" Text="{Binding Difficulty}"/>
+                                    <Label Grid.Row="0" Grid.Column="4" Text="{Binding Date}"/>
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
             </VerticalStackLayout>
             <VerticalStackLayout BackgroundColor="Green" Grid.Row="1" Grid.Column = "0" Grid.ColumnSpan= "2">
 
