@@ -99,6 +99,8 @@
                     <Entry x:Name="Clue" 
                            Placeholder="clue goes here" 
                            WidthRequest="400"
+                           BackgroundColor="Black"
+                           TextColor="White"
                            MaxLength="200"/>
                     </Border>
                 </HorizontalStackLayout>
@@ -107,6 +109,8 @@
                     <Entry x:Name="Answer" 
                            Placeholder="Answer goes here" 
                            WidthRequest="400"
+                           BackgroundColor="Black"
+                           TextColor="White"
                            MaxLength="25"/>
                         </Border>
                 </HorizontalStackLayout>
@@ -115,6 +119,8 @@
                     <Entry x:Name="Difficulty" 
                            Placeholder="#" 
                            WidthRequest="100"
+                           BackgroundColor="Black"
+                           TextColor="White"
                            Keyboard="Numeric"/>
                         </Border>
                     <Border >
@@ -122,12 +128,21 @@
                            Placeholder="Date goes here" 
                            WidthRequest="100"
                            MaxLength="9"
+                           BackgroundColor="Black"
                            TextColor="White"
                            Keyboard="Numeric"/>
                     </Border>
                 </HorizontalStackLayout>
 
             </VerticalStackLayout>
+            <Image
+                Grid.Column="1"
+                Grid.Row="1"
+                Source="cross.jpg"
+                SemanticProperties.Description="stupid criss cross thing"
+                HeightRequest="200"
+                WidthRequest="800"
+                HorizontalOptions="Center" />
         </Grid>
     </ScrollView>
 

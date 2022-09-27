@@ -2065,11 +2065,9 @@ C:/Users/rodri_egxtw4o/OneDrive/UWO/Semester 5/CS 341/Lab2-2022Maui/obj/Debug/ne
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/Mono.Android.Export.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/Mono.Android.Export.pdb
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/Mono.Android.pdb
-/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/mscorlib.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/netstandard.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.AppContext.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Buffers.dll
-/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Collections.Concurrent.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Collections.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Collections.Immutable.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Collections.NonGeneric.dll
@@ -2085,7 +2083,6 @@ C:/Users/rodri_egxtw4o/OneDrive/UWO/Semester 5/CS 341/Lab2-2022Maui/obj/Debug/ne
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Core.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Data.Common.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Data.DataSetExtensions.dll
-/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Data.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Diagnostics.Contracts.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Diagnostics.Debug.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Diagnostics.DiagnosticSource.dll
@@ -2096,7 +2093,6 @@ C:/Users/rodri_egxtw4o/OneDrive/UWO/Semester 5/CS 341/Lab2-2022Maui/obj/Debug/ne
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Diagnostics.Tools.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Diagnostics.TraceSource.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Diagnostics.Tracing.dll
-/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Drawing.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Drawing.Primitives.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Dynamic.Runtime.dll
@@ -2130,7 +2126,6 @@ C:/Users/rodri_egxtw4o/OneDrive/UWO/Semester 5/CS 341/Lab2-2022Maui/obj/Debug/ne
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Net.HttpListener.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Net.Mail.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Net.NameResolution.dll
-/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Net.NetworkInformation.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Net.Ping.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Net.Primitives.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Net.Quic.dll
@@ -2146,9 +2141,7 @@ C:/Users/rodri_egxtw4o/OneDrive/UWO/Semester 5/CS 341/Lab2-2022Maui/obj/Debug/ne
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Numerics.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Numerics.Vectors.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.ObjectModel.dll
-/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Private.CoreLib.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Private.DataContractSerialization.dll
-/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Private.Uri.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Private.Xml.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Private.Xml.Linq.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Reflection.DispatchProxy.dll
@@ -2215,7 +2208,6 @@ C:/Users/rodri_egxtw4o/OneDrive/UWO/Semester 5/CS 341/Lab2-2022Maui/obj/Debug/ne
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Web.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Web.HttpUtility.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Windows.dll
-/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Xml.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Xml.Linq.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Xml.ReaderWriter.dll
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Xml.Serialization.dll
@@ -2869,3 +2861,11 @@ C:/Users/rodri_egxtw4o/OneDrive/UWO/Semester 5/CS 341/Lab2-2022Maui/obj/Debug/ne
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/stamp/_GenerateJavaStubs.stamp
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/stamp/_GeneratePackageManagerJava.stamp
 /Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/stamp/_ResolveLibraryProjectImports.stamp
+/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/mscorlib.dll
+/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Collections.Concurrent.dll
+/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Data.dll
+/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.dll
+/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Net.NetworkInformation.dll
+/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Private.CoreLib.dll
+/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Private.Uri.dll
+/Users/al/Desktop/SE.1/Lab2-2022Maui/Lab2-2022Maui/obj/Debug/net6.0-android/android/assets/System.Xml.dll
