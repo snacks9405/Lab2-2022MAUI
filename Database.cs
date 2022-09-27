@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text.Json;
 using System.Collections.ObjectModel;
+using Lab2_2022Maui;
 
 // https://www.dotnetperls.com/serialize-list
 // https://www.daveoncsharp.com/2009/07/xml-serialization-of-collections/
@@ -13,7 +14,8 @@ namespace Lab2_2022
 {
     public class Database : IDatabase
     {
-        const String filename = "clues.db";
+        readonly String filename = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "temp.txt");
+
 
         SortedDictionary<int, Entry> entries;
         JsonSerializerOptions options;
@@ -53,7 +55,7 @@ namespace Lab2_2022
                 return 1;
             }
             List<int> keys = new(entries.Keys);
-            
+
             for (int i = 1; i <= keys.Count; i++)
             {
                 if (i < keys[i - 1])
@@ -140,7 +142,8 @@ namespace Lab2_2022
                 {
                     observableEntries.Add(pair.Value);
                 }
-            } else { entries = new SortedDictionary<int, Entry>(); }
+            }
+            else { entries = new SortedDictionary<int, Entry>(); }
 
             return entries;
         }

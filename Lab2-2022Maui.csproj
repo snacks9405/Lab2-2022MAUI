@@ -45,4 +45,6 @@
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
 
+	<ProjectExtensions><VisualStudio><UserProperties XamarinHotReloadDebuggerTimeoutExceptionLab22022MauiHideInfoBar="True" /></VisualStudio></ProjectExtensions>
+
 </Project>
