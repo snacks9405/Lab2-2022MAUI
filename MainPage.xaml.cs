@@ -26,7 +26,7 @@ public partial class MainPage : ContentPage
         InvalidFieldError result = bl.AddEntry(clue, answer, intDifficulty, date);
 		if (result != InvalidFieldError.NoError){ InvalidFieldReporter(result); }
 
-       // EntriesList.ItemsSource = bl.GetEntries();
+       EntriesList.ItemsSource = bl.GetEntries();
     }
 
 	bool CheckDifficulty(String difficulty)
@@ -79,5 +79,8 @@ public partial class MainPage : ContentPage
     {
 		DisplayAlert("Oopsies", e.ToString(), "my bad");
     }
-	
+
+    void EntriesList_Scrolled(System.Object sender, Microsoft.Maui.Controls.ScrolledEventArgs e)
+    {
+    }
 }

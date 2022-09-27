@@ -23,30 +23,49 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-
+                <VerticalStackLayout Grid.Row = "0">
+                    <Border StrokeThickness="5">
                 <Button x:Name="AddEntryBtn"
-                            Text="Add Entry"  
+                            Text="Add Entry"
+                            FontFamily="comic sans MS"
+                            FontSize="20"
                             Grid.Row="0"
+                            BackgroundColor= "Black"
                             Clicked="OnAddEntryClicked"
-                            TextColor="Black"/>
-
-
-                <Button x:Name=" DeleteEntryBtn"
-                            Text="Delete Entry" 
+                            TextColor="White"/>
+                    </Border>
+                    </VerticalStackLayout>
+                
+                <VerticalStackLayout Grid.Row="1">
+                    <Border StrokeThickness= "5">
+                        <Button x:Name="DeleteEntryBtn"
+                            FontFamily="Comic Sans MS"
+                            Text="Delete Entry"
+                            FontSize="20"
+                            BackgroundColor= "Black"
                             Clicked="OnDeleteClicked"
                             Grid.Row="1"
-                            TextColor="Black"/>
-                            
+                            TextColor="White"/>
+                        </Border>
+                    </VerticalStackLayout>
+                
+                 
+                <VerticalStackLayout Grid.Row="2">
+                                        <Border StrokeThickness= "5">
 
                 <Button x:Name ="EditEntryBtn"
                             Text="Edit Entry"
+                            FontFamily="comic sans MS"
+                            FontSize="20"
                             Grid.Row="2"
+                            BackgroundColor= "Black"
                             Clicked="OnEditClicked"
-                            TextColor="Black"/>
-
-
+                            TextColor="White"/>
+                                            </Border>
+                    </VerticalStackLayout>
+                
             </Grid>
-            <VerticalStackLayout BackgroundColor="White" Grid.Row="0" Grid.Column="1">
+            <VerticalStackLayout  Grid.Row="0" Grid.Column="1">
                 <ListView x:Name="EntriesList">
                     <ListView.ItemTemplate>
                         <DataTemplate>
@@ -62,43 +81,50 @@
                                         <ColumnDefinition Width="Auto"/>
                                         <ColumnDefinition Width="Auto"/>
                                     </Grid.ColumnDefinitions>
-                                    <Label Grid.Row="0" Grid.Column="0" Text="{Binding Id}"/>
-                                    <Label Grid.Row="0" Grid.Column="1" Text="{Binding Clue}"/>
+                                    <Label Grid.Row="0" Grid.Column="0" Text="{Binding Id}" />
+                                    <Label Grid.Row="0" Grid.Column="1" Text="{Binding Clue}" />
                                     <Label Grid.Row="0" Grid.Column="2" Text="{Binding Answer}"/>
                                     <Label Grid.Row="0" Grid.Column="3" Text="{Binding Difficulty}"/>
-                                    <Label Grid.Row="0" Grid.Column="4" Text="{Binding Date}"/>
+                                    <Label Grid.Row="0" Grid.Column="4" Text="{Binding Date}" />
                                 </Grid>
                             </ViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
             </VerticalStackLayout>
-            <VerticalStackLayout BackgroundColor="Green" Grid.Row="1" Grid.Column = "0" Grid.ColumnSpan= "2">
-
+            <VerticalStackLayout Grid.Row="1" Grid.Column = "0" Grid.ColumnSpan= "2" BackgroundColor="Black">
+                <Border StrokeThickness="12"/>
                 <HorizontalStackLayout>
+                    <Border >
                     <Entry x:Name="Clue" 
                            Placeholder="clue goes here" 
                            WidthRequest="400"
-                           BackgroundColor="Gray"
                            MaxLength="200"/>
+                    </Border>
                 </HorizontalStackLayout>
                 <HorizontalStackLayout>
+                    <Border >
                     <Entry x:Name="Answer" 
                            Placeholder="Answer goes here" 
                            WidthRequest="400"
-                           BackgroundColor="Gray"
                            MaxLength="25"/>
+                        </Border>
                 </HorizontalStackLayout>
                 <HorizontalStackLayout>
+                    <Border >
                     <Entry x:Name="Difficulty" 
                            Placeholder="#" 
                            WidthRequest="100"
                            Keyboard="Numeric"/>
+                        </Border>
+                    <Border >
                     <Entry x:Name="Date" 
                            Placeholder="Date goes here" 
                            WidthRequest="100"
                            MaxLength="9"
+                           TextColor="White"
                            Keyboard="Numeric"/>
+                    </Border>
                 </HorizontalStackLayout>
 
             </VerticalStackLayout>
