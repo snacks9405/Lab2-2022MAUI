@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Lab2_2022
 {
-    public class UserInterface : IUserInterface
+    public class UserInterface
     {
         IBusinessLogic bl;
 

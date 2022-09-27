@@ -33,14 +33,12 @@ namespace Lab2_2022
         const int MAX_ANSWER_LENGTH = 21;
         const int MAX_DIFFICULTY = 5;
 
-        IUserInterface ui;
+        UserInterface ui;
         IDatabase db;
 
         public BusinessLogic()
         {
             db = new Database();
-            ui = new UserInterface(this);
-            ui.DisplayMenu();
         }
 
 

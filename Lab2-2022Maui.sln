@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 25.0.1703.5
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab2-2022Maui", "Lab2-2022Maui.csproj", "{83B5FC15-FE5B-47C4-8956-67CBD533D3FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab2-2022Maui", "Lab2-2022Maui.csproj", "{83B5FC15-FE5B-47C4-8956-67CBD533D3FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +13,7 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{83B5FC15-FE5B-47C4-8956-67CBD533D3FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{83B5FC15-FE5B-47C4-8956-67CBD533D3FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83B5FC15-FE5B-47C4-8956-67CBD533D3FD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{83B5FC15-FE5B-47C4-8956-67CBD533D3FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83B5FC15-FE5B-47C4-8956-67CBD533D3FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection

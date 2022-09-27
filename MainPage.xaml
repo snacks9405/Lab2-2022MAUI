@@ -24,45 +24,51 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <VerticalStackLayout BackgroundColor="Gray" Grid.Column="0" Grid.Row="0">
-                    <Button x:Name="AddEntryBtn"
-                            Text="Add Entry"/>
+                <Button x:Name="AddEntryBtn"
+                            Text="Add Entry"  
+                            Grid.Row="0"
+                            BackgroundColor="White"
+                            Clicked="OnAddEntryClicked"
+                            TextColor="Black"/>
 
 
+                <Button x:Name=" DeleteEntryBtn"
+                            Text="Delete Entry" 
+                            Grid.Row="1"
+                            BackgroundColor="White"
+                            TextColor="Black"/>
 
-                </VerticalStackLayout>
-                <VerticalStackLayout BackgroundColor="Red" Grid.Column="0" Grid.Row="1">
-                    <Button x:Name=" DeleteEntryBtn"
-                            Text="Delete Entry"/>
+                <Button x:Name ="EditEntryBtn"
+                            Text="Edit Entry"
+                            Grid.Row="2"
+                            BackgroundColor="White"
+                            TextColor="Black"/>
 
-
-
-
-                </VerticalStackLayout>
-
-                <VerticalStackLayout BackgroundColor="Yellow" Grid.Column="0" Grid.Row="2">
-                    <Button x:Name ="EditEntryBtn"
-                            Text="Edit Entry"/>
-
-
-                </VerticalStackLayout>
 
             </Grid>
             <VerticalStackLayout BackgroundColor="Purple" Grid.Row="0" Grid.Column="1">
 
             </VerticalStackLayout>
             <VerticalStackLayout BackgroundColor="Green" Grid.Row="1" Grid.Column = "0" Grid.ColumnSpan= "2">
-                <Label Text="five"/>
 
                 <HorizontalStackLayout>
-                    <Entry x:Name="Clue" Placeholder="clue goes here" WidthRequest="400"></Entry>
+                    <Entry x:Name="Clue" 
+                           Placeholder="clue goes here" 
+                           WidthRequest="400"
+                           BackgroundColor="White"></Entry>
                 </HorizontalStackLayout>
                 <HorizontalStackLayout>
-                    <Entry x:Name="Answer" Placeholder="Answer goes here" WidthRequest="400"></Entry>
+                    <Entry x:Name="Answer" 
+                           Placeholder="Answer goes here" 
+                           WidthRequest="400"></Entry>
                 </HorizontalStackLayout>
                 <HorizontalStackLayout>
-                    <Entry x:Name="Difficulty" Placeholder="#" WidthRequest="100"></Entry>
-                    <Entry x:Name="Date" Placeholder=" " WidthRequest="100"></Entry>
+                    <Entry x:Name="Difficulty" 
+                           Placeholder="#" 
+                           WidthRequest="100"></Entry>
+                    <Entry x:Name="Date" 
+                           Placeholder=" " 
+                           WidthRequest="100"></Entry>
                 </HorizontalStackLayout>
 
             </VerticalStackLayout>
