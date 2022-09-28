@@ -1,6 +1,8 @@
-﻿using System;
-using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
 namespace Lab2_2022
+/*
+ * this one is mostly the same, just added that observable guff I still don't fully understand
+ */
 {
     [Serializable()]
     public class Entry : ObservableObject

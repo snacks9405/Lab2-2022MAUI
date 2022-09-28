@@ -1,15 +1,13 @@
-﻿using System;
-using System.IO;
-using System.Collections.Generic;
-using System.Runtime.Serialization.Formatters.Binary;
-using System.Text.Json;
+﻿
 using System.Collections.ObjectModel;
-using Lab2_2022Maui;
+using System.Text.Json;
 
 // https://www.dotnetperls.com/serialize-list
 // https://www.daveoncsharp.com/2009/07/xml-serialization-of-collections/
 
-
+/*
+ * kept comments pretty brief as 99% of this is written by you! :)
+ */
 namespace Lab2_2022
 {
     public class Database : IDatabase
@@ -21,13 +19,19 @@ namespace Lab2_2022
         JsonSerializerOptions options;
         ObservableCollection<Entry> observableEntries = new ObservableCollection<Entry>();
 
+        /// <summary>
+        /// constructor constructs
+        /// </summary>
         public Database()
         {
             GetEntries();
             options = new JsonSerializerOptions { WriteIndented = true };
         }
 
-
+        /// <summary>
+        /// adds entry 
+        /// </summary>
+        /// <param name="entry"></param>
         public void AddEntry(Entry entry)
         {
             entries.Add(entry.Id, entry);
@@ -57,6 +61,11 @@ namespace Lab2_2022
 
         }
 
+        /// <summary>
+        /// finds entry by id number
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public Entry FindEntry(int id)
         {
             if (entries.ContainsKey(id))
@@ -79,6 +88,11 @@ namespace Lab2_2022
 
         }
 
+        /// <summary>
+        /// modifies an existing entry
+        /// </summary>
+        /// <param name="replacementEntry"></param>
+        /// <returns></returns>
         public bool ReplaceEntry(Entry replacementEntry)
         {
             Entry entry = entries[replacementEntry.Id];
@@ -86,13 +100,13 @@ namespace Lab2_2022
             entry.Answer = replacementEntry.Answer;
             entry.Clue = replacementEntry.Clue;
             entry.Difficulty = replacementEntry.Difficulty;
-            entry.Date = replacementEntry.Date;         // change it then write it out
+            entry.Date = replacementEntry.Date;
 
             return CommitChanges();
         }
 
         /// <summary>
-        /// 
+        /// initializes the database from the flat db
         /// </summary>
         /// <returns></returns>
         public ObservableCollection<Entry> GetEntries()
@@ -121,6 +135,10 @@ namespace Lab2_2022
             return observableEntries;
         }
 
+        /// <summary>
+        /// saves changes to entries and confirms observable is maintaining an accurate collection
+        /// </summary>
+        /// <returns></returns>
         private bool CommitChanges()
         {
             try

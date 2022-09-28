@@ -1,7 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 
+/*
+ * kept comments pretty brief as 99% of this is written by you! :)
+ */
 namespace Lab2_2022
 {
 
@@ -36,22 +37,42 @@ namespace Lab2_2022
 
         IDatabase db;
 
+        /// <summary>
+        /// constructor constructs
+        /// </summary>
         public BusinessLogic()
         {
             db = new Database();
         }
 
-
+        /// <summary>
+        /// grabs them entries from the db
+        /// </summary>
+        /// <returns></returns>
         public ObservableCollection<Entry> GetEntries()
         {
             return db.GetEntries();
         }
 
+        /// <summary>
+        /// finds id for an entry
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public Entry FindEntry(int id)
         {
             return db.FindEntry(id);
         }
 
+        /// <summary>
+        /// checks entry fields. **added really basic date check as it was missing from 
+        /// given solution
+        /// </summary>
+        /// <param name="clue"></param>
+        /// <param name="answer"></param>
+        /// <param name="difficulty"></param>
+        /// <param name="date"></param>
+        /// <returns></returns>
         private InvalidFieldError CheckEntryFields(string clue, string answer, int difficulty, string date)
         {
             if (clue == null || clue.Length < 1 || clue.Length > MAX_CLUE_LENGTH)
@@ -74,7 +95,14 @@ namespace Lab2_2022
             return InvalidFieldError.NoError;
         }
 
-
+        /// <summary>
+        /// adds entry if it can or throws error describing problem
+        /// </summary>
+        /// <param name="clue"></param>
+        /// <param name="answer"></param>
+        /// <param name="difficulty"></param>
+        /// <param name="date"></param>
+        /// <returns></returns>
         public InvalidFieldError AddEntry(string clue, string answer, int difficulty, string date)
         {
 
@@ -90,6 +118,11 @@ namespace Lab2_2022
             return InvalidFieldError.NoError;
         }
 
+        /// <summary>
+        /// deletes entry
+        /// </summary>
+        /// <param name="entryId"></param>
+        /// <returns></returns>
         public EntryDeletionError DeleteEntry(int entryId)
         {
 
