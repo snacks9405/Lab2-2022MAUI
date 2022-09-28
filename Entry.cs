@@ -5,11 +5,23 @@ namespace Lab2_2022
     [Serializable()]
     public class Entry : ObservableObject
     {
-        public String Clue { get; set; }
-        public String Answer { get; set; }
-        public int Difficulty { get; set; }
-        public String Date { get; set; }
-        public int Id { get; set; }
+        String clue;
+        String answer;
+        int difficulty;
+        String date;
+        int id;
+
+        // Sets the properties for clue, answer, difficulty, date, id
+        public String Clue { get { return clue; } set { SetProperty(ref clue, value); } }
+        public String Answer { get { return answer; } set { SetProperty(ref answer, value); } }
+        public int Difficulty { get { return difficulty; } set { SetProperty(ref difficulty, value); } }
+        public String Date { get { return date; } set { SetProperty(ref date, value); } }
+        public int Id { get { return id; } set { SetProperty(ref id, value); } }
+
+        /**
+         * Constructor for entries
+         * 
+         */
 
         public Entry(String clue, String answer, int difficulty, String date, int id)
         {

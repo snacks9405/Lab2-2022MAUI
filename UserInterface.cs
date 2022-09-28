@@ -3,15 +3,25 @@ using System.Collections.Generic;
 
 namespace Lab2_2022
 {
+    /**
+     * This class is responsible for displaying all the text in the gui
+     */
     public class UserInterface
     {
         IBusinessLogic bl;
+
+        /**
+         * Constructor for Userinterface
+         */
 
         public UserInterface(BusinessLogic bl)
         {
             this.bl = bl;
         }
 
+        /**
+         * Displays menu using while loop that checks boolean value 'done'
+         */
 
         public void DisplayMenu()
         {
@@ -35,7 +45,13 @@ namespace Lab2_2022
         }
 
 
-
+        /**
+         * Displays all the text fields for adding an entry
+         * clue:
+         * answer:
+         * difficulty:
+         * Date(mm/dd/yyyy)
+         */
         private void AddEntry()
         {
             String clue;
@@ -61,6 +77,10 @@ namespace Lab2_2022
             }
 
         }
+
+        /**
+         * Until a valid difficulty is entered, print "Difficulty must be an intger. Try again."
+         */
 
         private int GetValidId(string purpose)
         {
@@ -96,6 +116,10 @@ namespace Lab2_2022
             return difficulty;
         }
 
+        /**
+         * Deletes an entry by checking if id is valid
+         * if the id is not validd, display error message: "Error while deleting entry:{0}"
+         */
 
         private void DeleteEntry()
         {
@@ -107,6 +131,12 @@ namespace Lab2_2022
                 Console.WriteLine("Error while deleting entry: {0}", result);
             }
         }
+        /**
+         * Checks that the id entered is valid
+         * creates a new entry to replace old one
+         * displays everything similar to AddEntry
+         * checks for invalid difficulty
+         */
 
         private void EditEntry()
         {

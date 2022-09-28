@@ -26,7 +26,7 @@ public partial class MainPage : ContentPage
         InvalidFieldError result = bl.AddEntry(clue, answer, intDifficulty, date);
 		if (result != InvalidFieldError.NoError){ InvalidFieldReporter(result); }
 
-       // EntriesList.ItemsSource = bl.GetEntries();
+      // EntriesList.ItemsSource = bl.GetEntries();
     }
 
 	bool CheckDifficulty(String difficulty)
@@ -43,7 +43,7 @@ public partial class MainPage : ContentPage
         EntryDeletionError result = bl.DeleteEntry(entry.Id);
 
 		if (result != EntryDeletionError.NoError) { EntryDeletionReporter(result); }
-        EntriesList.ItemsSource = bl.GetEntries();
+       //EntriesList.ItemsSource = bl.GetEntries();
 
 	
     }
@@ -61,7 +61,7 @@ public partial class MainPage : ContentPage
         if (entry == null) {return;}
         EntryEditError result = bl.EditEntry(clue, answer, intDifficulty, date, entry.Id);
 		if (result != EntryEditError.NoError) { EntryEditReporter(result); }
-		EntriesList.ItemsSource = bl.GetEntries();
+		//EntriesList.ItemsSource = bl.GetEntries();
     }
 
 	void InvalidFieldReporter(InvalidFieldError e)

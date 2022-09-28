@@ -12,6 +12,10 @@ using Lab2_2022Maui;
 
 namespace Lab2_2022
 {
+    /**
+     * This class is responsible for writing and reading the local database
+     */
+
     public class Database : IDatabase
     {
         readonly String filename = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "clues.txt");
@@ -56,6 +60,9 @@ namespace Lab2_2022
             return (keys.Count == 0 ? 1 : keys.Count + 1);
 
         }
+        /**
+         * Finds a specific entry using an id
+         */
 
         public Entry FindEntry(int id)
         {
@@ -79,6 +86,9 @@ namespace Lab2_2022
 
         }
 
+        /**
+         * Uses a replacement entry 
+         */
         public bool ReplaceEntry(Entry replacementEntry)
         {
             Entry entry = entries[replacementEntry.Id];
@@ -121,6 +131,9 @@ namespace Lab2_2022
             return observableEntries;
         }
 
+       /**
+        * Writes the entries into the local database
+        */
         private bool CommitChanges()
         {
             try

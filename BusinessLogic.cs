@@ -4,7 +4,9 @@ using System.Collections.ObjectModel;
 
 namespace Lab2_2022
 {
-
+    /**
+     * Enums for invalid Add,delete,edit
+     */
     public enum InvalidFieldError
     {
         InvalidClueLength,
@@ -28,6 +30,10 @@ namespace Lab2_2022
         DBEditError,
         NoError
     }
+    /**
+     * Class for business logic 
+     * handles invalid entries
+     */
     public class BusinessLogic : IBusinessLogic
     {
         const int MAX_CLUE_LENGTH = 250;
@@ -36,22 +42,35 @@ namespace Lab2_2022
 
         IDatabase db;
 
+        /**
+         * Constructor for Business Logic
+         */
         public BusinessLogic()
         {
             db = new Database();
         }
 
+        /**
+         * retunrs the list of Entries
+         */
 
         public ObservableCollection<Entry> GetEntries()
         {
             return db.GetEntries();
         }
 
+        /**
+         * Finds a specific entry to using an id
+         */
         public Entry FindEntry(int id)
         {
             return db.FindEntry(id);
         }
 
+        /**
+         * Finds checks each entry field: clue, answer, difficulty, date
+         *                      
+         */
         private InvalidFieldError CheckEntryFields(string clue, string answer, int difficulty, string date)
         {
             if (clue == null || clue.Length < 1 || clue.Length > MAX_CLUE_LENGTH)
@@ -74,28 +93,37 @@ namespace Lab2_2022
             return InvalidFieldError.NoError;
         }
 
+        /**
+         * Invalid AddEntry checks
+         */
 
         public InvalidFieldError AddEntry(string clue, string answer, int difficulty, string date)
         {
 
-            var result = CheckEntryFields(clue, answer, difficulty, date);
+            var result = CheckEntryFields(clue, answer, difficulty, date);      //checks if an error was found
             if (result != InvalidFieldError.NoError)
             {
 
                 return result;
             }
+            
             Entry entry = new Entry(clue, answer, difficulty, date, db.GetNextAvailableID());
             db.AddEntry(entry);
 
             return InvalidFieldError.NoError;
         }
 
+        /**
+         * Invalid DeleteEntry checks
+
+         */
+
         public EntryDeletionError DeleteEntry(int entryId)
         {
 
-            var entry = db.FindEntry(entryId);
+            var entry = db.FindEntry(entryId);      
 
-            if (entry != null)
+            if (entry != null)                          //checks if entry is not null
             {
                 bool success = db.DeleteEntry(entry);
                 if (success)

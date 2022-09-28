@@ -4,6 +4,9 @@
         <name>Lab2-2022Maui</name>
     </assembly>
     <members>
+        <member name="T:Lab2_2022.InvalidFieldError">
+            Enums for invalid Add,delete,edit
+        </member>
         <member name="M:Lab2_2022.BusinessLogic.EditEntry(System.String,System.String,System.Int32,System.String,System.Int32)">
             <summary>
             
