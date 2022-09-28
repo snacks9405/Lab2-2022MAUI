@@ -135,14 +135,7 @@
                 </HorizontalStackLayout>
 
             </VerticalStackLayout>
-            <Image
-                Grid.Column="1"
-                Grid.Row="1"
-                Source="cross.jpg"
-                SemanticProperties.Description="stupid criss cross thing"
-                HeightRequest="200"
-                WidthRequest="800"
-                HorizontalOptions="Center" />
+
         </Grid>
     </ScrollView>
 
